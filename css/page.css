@@ -1,0 +1,37 @@
+body {
+	margin: 0;
+	min-height: 100vh;
+
+	display: grid;
+	grid-template-columns: 3fr minmax(200px, 1fr);
+	grid-template-rows: 100px 1fr 100px;
+	grid-template-areas: "header header"
+						 "main aside"
+						 "footer footer";
+}
+
+header {
+	grid-area: header;
+
+	background-color: beige;
+}
+
+main {
+	grid-area: main;
+
+	display: grid;
+
+	background-color: cadetblue;
+}
+
+aside {
+	grid-area: aside;
+
+	background-color: gold;
+}
+
+footer {
+	grid-area: footer;
+
+	background-color: darkkhaki;
+}
