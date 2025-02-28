@@ -1,0 +1,34 @@
+#container {
+	height: 400px;
+
+	padding: 10px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 2fr;
+	grid-auto-rows: 1fr;
+	grid-auto-columns: 4fr;
+	grid-auto-flow: row dense;
+	gap: 10px;
+
+	background-color: beige;
+}
+
+.item:nth-child(1) {
+	background-color: aqua;
+}
+
+.item:nth-child(2) {
+	background-color: chocolate;
+}
+
+.item:nth-child(3) {
+	grid-column: span 2;
+
+	background-color: mediumvioletred;
+}
+
+.item:nth-child(4) {
+	grid-row: span 2;
+
+	background-color: #467123;
+}
